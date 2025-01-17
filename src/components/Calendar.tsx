@@ -3,7 +3,7 @@ import { feriadosChile2025 } from "@/utils/utils";
 import { eachDayOfInterval, isSameDay, isWeekend, parseISO } from "date-fns";
 import { es } from "date-fns/locale";
 import { useState } from "react";
-import { DayPicker } from "react-day-picker";
+import { DateRange, DayPicker } from "react-day-picker";
 import "react-day-picker/style.css";
 
 export function Calendar() {
@@ -63,8 +63,13 @@ export function Calendar() {
                 disabled={daysDisabled}
                 numberOfMonths={2}
                 mode="range"
-                selected={selectedRange}
-                onSelect={setSelectedRange}
+                selected={selectedRange as DateRange}
+                onSelect={(range) => 
+                    setSelectedRange({
+                        from: range?.from ?? undefined,
+                        to: range?.to ?? undefined
+                    })
+                }
             // footer={
             //     `Inicio: ${selectedRange.from?.toLocaleDateString()} - Fin: ${selectedRange.to?.toLocaleDateString()} ${countDaysInRange()} `
             // }
