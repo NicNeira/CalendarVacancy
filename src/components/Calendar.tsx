@@ -42,11 +42,11 @@ export function Calendar() {
     }
 
     const specialDay = feriadosChile2025.map(d => new Date(d.fecha + ' 00:00:00'))
-    const ranges = [
-        { user: 'juanito', from: new Date('2025-01-02 00:00:00'), to: new Date('2025-01-08 00:00:00'), color: 'bg-red-200' },
-        { user: 'pacho', from: new Date('2025-01-09 00:00:00'), to: new Date('2025-01-13 00:00:00'), color: 'bg-blue-200' },
-        { user: 'nico', from: new Date('2025-02-14 00:00:00'), to: new Date('2025-02-21 00:00:00'), color: 'bg-green-200' },
-    ]
+    // const ranges = [
+    //     { user: 'juanito', from: new Date('2025-01-02 00:00:00'), to: new Date('2025-01-08 00:00:00'), color: 'bg-red-200' },
+    //     { user: 'pacho', from: new Date('2025-01-09 00:00:00'), to: new Date('2025-01-13 00:00:00'), color: 'bg-blue-200' },
+    //     { user: 'nico', from: new Date('2025-02-14 00:00:00'), to: new Date('2025-02-21 00:00:00'), color: 'bg-green-200' },
+    // ]
 
     return (
         <>
