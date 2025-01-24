@@ -231,3 +231,15 @@ export const feriadosArg2025 = [
         nombre: 'Navidad'
     }
 ];
+
+export interface Country {
+    code: string;
+    name: string;
+    flag: string;
+}
+
+export const CountriesData: Country[] = [
+    { code: 'CL', name: 'Chile', flag: '/flags/cl.webp' },
+    { code: 'AR', name: 'Argentina', flag: '/flags/ar.webp' },
+    { code: 'MX', name: 'México', flag: '/flags/mx.webp' }
+];

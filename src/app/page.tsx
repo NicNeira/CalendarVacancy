@@ -1,5 +1,5 @@
 import { Calendar } from '@/components/Calendar';
-import { ToogleButton } from '@/components/ToogleButton';
+import { ToogleButton } from '@/components/ui/ToogleButton';
 
 export default function Home() {
     return (
