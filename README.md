@@ -35,5 +35,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
+## Utils
 
-#### PR TEST
+- Add: flag image Countries --> https://flagpedia.net/download/api
