@@ -1,14 +1,14 @@
 'use client';
 // import { feriadosChile2025 } from '@/utils/utils';
+import { useHolidays } from '@/hooks/useHolidays';
+import { Country } from '@/utils/utils';
 import { eachDayOfInterval, isSameDay, parseISO } from 'date-fns';
 import { es } from 'date-fns/locale';
 import { useState } from 'react';
 import { DateRange, DayPicker } from 'react-day-picker';
 import 'react-day-picker/style.css';
-import { useHolidays } from '@/hooks/useHolidays';
-import { LoadingSpinner } from './ui/LoadingSpinner';
 import { CountrySelect } from './ui/CountrySelect';
-import { Country } from '@/utils/utils';
+import { LoadingSpinner } from './ui/LoadingSpinner';
 
 export function Calendar() {
     const [daysWeek, setDaysWeek] = useState([0, 6]);
@@ -82,7 +82,6 @@ export function Calendar() {
 
     return (
         <>
-            {/* Añade el selector de países aquí */}
             <div className="mb-6 flex justify-center">
                 <div className="relative inline-block">
                     <CountrySelect
@@ -104,7 +103,7 @@ export function Calendar() {
             </div>
 
             <div className="text-black bg-blue-200 dark:bg-green-200 text-center rounded p-3 my-3 font-semibold">
-                Estás solicitando <span className="font-bold text-green-500 dark:text-blue-500">{countDaysInRange()} </span>días hábiles de vacaciones
+                Estás solicitando <span className="font-bold text-green-500 dark:text-blue-500 ">{countDaysInRange()} </span>días hábiles de vacaciones
             </div>
 
             <DayPicker
@@ -126,12 +125,13 @@ export function Calendar() {
                 classNames={{
                     day: 'rounded-lg hover:bg-opacity-50 border-2 border-white dark:border-[#212121] transition-colors duration-200',
 
-                    selected: 'border-transparent bg-red-200',
-                    range_end: 'bg-red-200',
-                    range_middle: 'bg-red-200',
-                    range_start: 'bg-red-200',
+                    selected: 'border-transparent bg-blue-200 dark:bg-green-200 dark:text-black',
+                    range_end: 'bg-blue-200 dark:bg-green-200',
+                    range_middle: 'bg-blue-200 dark:bg-green-200',
+                    range_start: 'bg-blue-200 dark:bg-green-200',
                     disabled: '!bg-gray-200 text-gray-500',
-                    today: 'font-bold'
+                    today: 'font-bold',
+                    chevron: ' fill-blue-300 dark:fill-green-200'
                 }}
                 locale={es}
                 // autoFocus

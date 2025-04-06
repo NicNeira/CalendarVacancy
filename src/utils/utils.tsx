@@ -1,234 +1,279 @@
 export const feriadosChile2025 = [
     {
-        nombre: 'Año Nuevo',
-        comentarios: null,
-        fecha: '2025-01-02',
-        irrenunciable: '1',
-        tipo: 'Civil'
+        date: '2025-01-01',
+        day: 'Miércoles',
+        name: 'Año Nuevo',
+        type: 'irrenunciable'
     },
     {
-        nombre: 'Viernes Santo',
-        comentarios: null,
-        fecha: '2025-04-18',
-        irrenunciable: '0',
-        tipo: 'Religioso'
+        date: '2025-04-18',
+        day: 'Viernes',
+        name: 'Viernes Santo',
+        type: 'religioso'
     },
     {
-        nombre: 'Sábado Santo',
-        comentarios: null,
-        fecha: '2025-04-19',
-        irrenunciable: '0',
-        tipo: 'Religioso'
+        date: '2025-04-19',
+        day: 'Sábado',
+        name: 'Sábado Santo',
+        type: 'religioso'
     },
     {
-        nombre: 'Día Nacional del Trabajo',
-        comentarios: null,
-        fecha: '2025-05-01',
-        irrenunciable: '1',
-        tipo: 'Civil'
+        date: '2025-05-01',
+        day: 'Jueves',
+        name: 'Día Nacional del Trabajo',
+        type: 'irrenunciable'
     },
     {
-        nombre: 'Día de las Glorias Navales',
-        comentarios: null,
-        fecha: '2025-05-21',
-        irrenunciable: '0',
-        tipo: 'Civil'
+        date: '2025-05-21',
+        day: 'Miércoles',
+        name: 'Día de las Glorias Navales',
+        type: 'civil'
     },
     {
-        nombre: 'Día Nacional de los Pueblos Indígenas',
-        comentarios: null,
-        fecha: '2025-06-20',
-        irrenunciable: '0',
-        tipo: 'Civil'
+        date: '2025-06-20',
+        day: 'Viernes',
+        name: 'Día Nacional de los Pueblos Indígenas',
+        type: 'civil'
     },
     {
-        nombre: 'San Pedro y San Pablo',
-        comentarios: null,
-        fecha: '2025-06-29',
-        irrenunciable: '0',
-        tipo: 'Religioso'
+        date: '2025-06-29',
+        day: 'Domingo',
+        name: 'San Pedro y San Pablo / Elecciones Primarias',
+        type: 'feriado legal'
     },
     {
-        nombre: 'Elecciones Primarias Presidenciales y Parlamentarias',
-        comentarios: 'Por Confirmar',
-        fecha: '2025-06-29',
-        irrenunciable: '1',
-        tipo: 'Civil'
+        date: '2025-07-16',
+        day: 'Miércoles',
+        name: 'Día de la Virgen del Carmen',
+        type: 'religioso'
     },
     {
-        nombre: 'Día de la Virgen del Carmen',
-        comentarios: null,
-        fecha: '2025-07-16',
-        irrenunciable: '0',
-        tipo: 'Religioso'
+        date: '2025-08-15',
+        day: 'Viernes',
+        name: 'Asunción de la Virgen',
+        type: 'religioso'
     },
     {
-        nombre: 'Asunción de la Virgen',
-        comentarios: null,
-        fecha: '2025-08-15',
-        irrenunciable: '0',
-        tipo: 'Religioso'
+        date: '2025-09-18',
+        day: 'Jueves',
+        name: 'Independencia Nacional',
+        type: 'irrenunciable'
     },
     {
-        nombre: 'Independencia Nacional',
-        comentarios: null,
-        fecha: '2025-09-18',
-        irrenunciable: '1',
-        tipo: 'Civil'
+        date: '2025-09-19',
+        day: 'Viernes',
+        name: 'Día de las Glorias del Ejército',
+        type: 'irrenunciable'
     },
     {
-        nombre: 'Día de las Glorias del Ejército',
-        comentarios: null,
-        fecha: '2025-09-19',
-        irrenunciable: '1',
-        tipo: 'Civil'
+        date: '2025-10-12',
+        day: 'Domingo',
+        name: 'Encuentro de Dos Mundos',
+        type: 'civil'
     },
     {
-        nombre: 'Encuentro de Dos Mundos',
-        comentarios: null,
-        fecha: '2025-10-12',
-        irrenunciable: '0',
-        tipo: 'Civil'
+        date: '2025-10-31',
+        day: 'Viernes',
+        name: 'Día de las Iglesias Evangélicas y Protestantes',
+        type: 'religioso'
     },
     {
-        nombre: 'Día de las Iglesias Evangélicas y Protestantes',
-        comentarios: null,
-        fecha: '2025-10-31',
-        irrenunciable: '0',
-        tipo: 'Religioso'
+        date: '2025-11-01',
+        day: 'Sábado',
+        name: 'Día de Todos los Santos',
+        type: 'religioso'
     },
     {
-        nombre: 'Día de Todos los Santos',
-        comentarios: null,
-        fecha: '2025-11-01',
-        irrenunciable: '0',
-        tipo: 'Religioso'
+        date: '2025-11-16',
+        day: 'Domingo',
+        name: 'Elecciones Presidenciales y Parlamentarias',
+        type: 'feriado legal'
     },
     {
-        nombre: 'Elecciones Presidenciales y Parlamentarias',
-        comentarios: null,
-        fecha: '2025-11-16',
-        irrenunciable: '1',
-        tipo: 'Civil'
+        date: '2025-12-08',
+        day: 'Lunes',
+        name: 'Inmaculada Concepción',
+        type: 'religioso'
     },
     {
-        nombre: 'Inmaculada Concepción',
-        comentarios: null,
-        fecha: '2025-12-08',
-        irrenunciable: '0',
-        tipo: 'Religioso'
+        date: '2025-12-14',
+        day: 'Domingo',
+        name: 'Elecciones Presidenciales (segunda vuelta)',
+        type: 'feriado legal'
     },
     {
-        nombre: 'Elecciones Presidenciales (Segunda Vuelta)',
-        comentarios: 'Por Confirmar',
-        fecha: '2025-12-14',
-        irrenunciable: '1',
-        tipo: 'Civil'
-    },
-    {
-        nombre: 'Navidad',
-        comentarios: null,
-        fecha: '2025-12-25',
-        irrenunciable: '1',
-        tipo: 'Religioso'
+        date: '2025-12-25',
+        day: 'Jueves',
+        name: 'Navidad',
+        type: 'irrenunciable'
     }
 ];
 
 export const feriadosArg2025 = [
     {
-        fecha: '2025-01-01',
-        tipo: 'inamovible',
-        nombre: 'Año nuevo'
+        date: '2025-01-01',
+        day: 'Miércoles',
+        name: 'Año Nuevo',
+        type: 'inamovible'
     },
     {
-        fecha: '2025-03-03',
-        tipo: 'inamovible',
-        nombre: 'Carnaval'
+        date: '2025-03-03',
+        day: 'Lunes',
+        name: 'Carnaval',
+        type: 'inamovible'
     },
     {
-        fecha: '2025-03-04',
-        tipo: 'inamovible',
-        nombre: 'Carnaval'
+        date: '2025-03-04',
+        day: 'Martes',
+        name: 'Carnaval',
+        type: 'inamovible'
     },
     {
-        fecha: '2025-03-24',
-        tipo: 'inamovible',
-        nombre: 'Día Nacional de la Memoria por la Verdad y la Justicia'
+        date: '2025-03-24',
+        day: 'Lunes',
+        name: 'Día de la Memoria por la Verdad y la Justicia',
+        type: 'inamovible'
     },
     {
-        fecha: '2025-04-02',
-        tipo: 'inamovible',
-        nombre: 'Día del Veterano y de los Caídos en la Guerra de Malvinas'
+        date: '2025-04-02',
+        day: 'Miércoles',
+        name: 'Día del Veterano y de los Caídos en la Guerra de Malvinas',
+        type: 'inamovible'
     },
     {
-        fecha: '2025-04-18',
-        tipo: 'inamovible',
-        nombre: 'Viernes Santo'
+        date: '2025-04-17',
+        day: 'Jueves',
+        name: 'Jueves Santo',
+        type: 'no laborable'
     },
     {
-        fecha: '2025-05-01',
-        tipo: 'inamovible',
-        nombre: 'Día del Trabajador'
+        date: '2025-04-18',
+        day: 'Viernes',
+        name: 'Viernes Santo',
+        type: 'inamovible'
     },
     {
-        fecha: '2025-05-02',
-        tipo: 'puente',
-        nombre: 'Puente turístico no laborable'
+        date: '2025-05-01',
+        day: 'Jueves',
+        name: 'Día del Trabajador',
+        type: 'inamovible'
     },
     {
-        fecha: '2025-05-25',
-        tipo: 'inamovible',
-        nombre: 'Día de la Revolución de Mayo'
+        date: '2025-05-02',
+        day: 'Viernes',
+        name: 'Feriado puente',
+        type: 'no laborable'
     },
     {
-        fecha: '2025-06-16',
-        tipo: 'trasladable',
-        nombre: 'Paso a la Inmortalidad del General Martín Güemes'
+        date: '2025-05-25',
+        day: 'Domingo',
+        name: 'Día de la Revolución de Mayo',
+        type: 'inamovible'
     },
     {
-        fecha: '2025-06-20',
-        tipo: 'inamovible',
-        nombre: 'Paso a la Inmortalidad del General Manuel Belgrano'
+        date: '2025-06-16',
+        day: 'Lunes',
+        name: 'Paso a la Inmortalidad del General Martín Miguel de Güemes',
+        type: 'trasladable'
     },
     {
-        fecha: '2025-07-09',
-        tipo: 'inamovible',
-        nombre: 'Día de la Independencia'
+        date: '2025-06-20',
+        day: 'Viernes',
+        name: 'Paso a la Inmortalidad del General Manuel Belgrano',
+        type: 'inamovible'
     },
     {
-        fecha: '2025-08-15',
-        tipo: 'puente',
-        nombre: 'Puente turístico no laborable'
+        date: '2025-07-09',
+        day: 'Miércoles',
+        name: 'Día de la Independencia',
+        type: 'inamovible'
     },
     {
-        fecha: '2025-08-17',
-        tipo: 'trasladable',
-        nombre: 'Paso a la Inmortalidad del Gral. José de San Martín'
+        date: '2025-08-15',
+        day: 'Viernes',
+        name: 'Feriado puente',
+        type: 'no laborable'
     },
     {
-        fecha: '2025-10-12',
-        tipo: 'trasladable',
-        nombre: 'Día del Respeto a la Diversidad Cultural'
+        date: '2025-08-17',
+        day: 'Domingo',
+        name: 'Paso a la Inmortalidad del General José de San Martín',
+        type: 'trasladable'
     },
     {
-        fecha: '2025-11-21',
-        tipo: 'puente',
-        nombre: 'Puente turístico no laborable'
+        date: '2025-10-12',
+        day: 'Domingo',
+        name: 'Día del Respeto a la Diversidad Cultural',
+        type: 'trasladable'
     },
     {
-        fecha: '2025-11-24',
-        tipo: 'trasladable',
-        nombre: 'Día de la Soberanía Nacional'
+        date: '2025-11-21',
+        day: 'Viernes',
+        name: 'Feriado puente',
+        type: 'no laborable'
     },
     {
-        fecha: '2025-12-08',
-        tipo: 'inamovible',
-        nombre: 'Día de la Inmaculada Concepción de María'
+        date: '2025-11-24',
+        day: 'Lunes',
+        name: 'Día de la Soberanía Nacional',
+        type: 'trasladable'
     },
     {
-        fecha: '2025-12-25',
-        tipo: 'inamovible',
-        nombre: 'Navidad'
+        date: '2025-12-08',
+        day: 'Lunes',
+        name: 'Día de la Inmaculada Concepción de María',
+        type: 'inamovible'
+    },
+    {
+        date: '2025-12-25',
+        day: 'Jueves',
+        name: 'Navidad',
+        type: 'inamovible'
+    }
+];
+
+export const feriadosMexico2025 = [
+    {
+        date: '2025-01-01',
+        day: 'Miércoles',
+        name: 'Año Nuevo',
+        type: 'inamovible'
+    },
+    {
+        date: '2025-02-03',
+        day: 'Lunes',
+        name: 'Día de la Constitución',
+        type: 'inamovible'
+    },
+    {
+        date: '2025-03-17',
+        day: 'Lunes',
+        name: 'Natalicio de Benito Juárez',
+        type: 'inamovible'
+    },
+    {
+        date: '2025-05-01',
+        day: 'Jueves',
+        name: 'Día del Trabajo',
+        type: 'inamovible'
+    },
+    {
+        date: '2025-09-16',
+        day: 'Martes',
+        name: 'Día de la Independencia',
+        type: 'inamovible'
+    },
+    {
+        date: '2025-11-17',
+        day: 'Lunes',
+        name: 'Día de la Revolución Mexicana',
+        type: 'inamovible'
+    },
+    {
+        date: '2025-12-25',
+        day: 'Jueves',
+        name: 'Navidad',
+        type: 'inamovible'
     }
 ];
 

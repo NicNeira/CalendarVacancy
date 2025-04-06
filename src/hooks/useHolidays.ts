@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { feriadosArg2025, feriadosChile2025, feriadosMexico2025 } from '../utils/utils';
 
 interface HolidayParams {
     year: number;
@@ -7,14 +8,10 @@ interface HolidayParams {
 
 interface Holiday {
     date: string;
-    localName: string;
+    day?: string;
     name: string;
-    countryCode: string;
-    fixed: boolean;
-    global: boolean;
-    counties: string[] | null;
-    launchYear: number | null;
-    types: string[];
+    type?: string;
+    countryCode?: string;
 }
 
 export function useHolidays({ year, countryCode }: HolidayParams) {
@@ -25,26 +22,33 @@ export function useHolidays({ year, countryCode }: HolidayParams) {
     useEffect(() => {
         setLoading(true);
 
-        async function fetchHolidays() {
-            try {
-                const response = await fetch(`https://date.nager.at/api/v3/publicholidays/${year}/${countryCode}`);
-                if (!response.ok) {
-                    throw new Error('Error al obtener los feriados');
-                }
-                const data: Holiday[] = await response.json();
-                setHolidays(data);
-            } catch (err) {
-                if (err instanceof Error) {
-                    setError(err.message);
-                } else {
-                    setError('An unknown error occurred');
-                }
-            } finally {
-                setLoading(false);
-            }
-        }
+        try {
+            let selectedHolidays: Holiday[] = [];
 
-        fetchHolidays();
+            switch (countryCode) {
+                case 'CL':
+                    selectedHolidays = feriadosChile2025;
+                    break;
+                case 'AR':
+                    selectedHolidays = feriadosArg2025;
+                    break;
+                case 'MX':
+                    selectedHolidays = feriadosMexico2025;
+                    break;
+                default:
+                    throw new Error('Código de país no soportado');
+            }
+
+            setHolidays(selectedHolidays);
+        } catch (err) {
+            if (err instanceof Error) {
+                setError(err.message);
+            } else {
+                setError('An unknown error occurred');
+            }
+        } finally {
+            setLoading(false);
+        }
     }, [year, countryCode]);
 
     return { holidays, loading, error };
