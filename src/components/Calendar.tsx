@@ -64,8 +64,7 @@ export function Calendar({
                 onSaveRange({
                     from: selectedRange.from,
                     to: selectedRange.to,
-                    days: daysCount,
-                    status: 'Pending'
+                    days: daysCount
                 });
                 // Clear selection after saving
                 setSelectedRange({});

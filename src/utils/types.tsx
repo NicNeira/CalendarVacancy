@@ -26,7 +26,6 @@ export interface VacationRange {
     from: Date;
     to: Date;
     days: number;
-    status?: 'Pending' | 'Approved' | 'Rejected';
 }
 
 export interface RegisterVacationsProps {
@@ -34,4 +33,5 @@ export interface RegisterVacationsProps {
     availableDays: number;
     usedDays: number;
     onClearVacations?: () => void;
+    onDeleteRange?: (index: number) => void;
 }

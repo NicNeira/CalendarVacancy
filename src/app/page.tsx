@@ -4,6 +4,7 @@ import { Calendar } from '@/components/Calendar';
 import { RegisterVacations } from '@/components/RegisterVacations';
 import { Configuration } from '@/components/ui/Configuration';
 import { CountrySelect } from '@/components/ui/CountrySelect';
+import { DaysInput } from '@/components/ui/DaysInput';
 import { ToogleButton } from '@/components/ui/ToogleButton';
 import { useHolidays } from '@/hooks/useHolidays';
 import { Country, DateRanges, VacationRange } from '@/utils/types';
@@ -50,6 +51,10 @@ export default function Home() {
         setSavedRanges([]);
     };
 
+    const handleDeleteRange = (index: number) => {
+        setSavedRanges(prev => prev.filter((_, i) => i !== index));
+    };
+
     const calculateUsedDays = () => {
         return savedRanges.reduce((total, range) => total + range.days, 0);
     };
@@ -83,22 +88,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="flex mb-6 items-center gap-3">
-                    <label htmlFor="availableDays" className=" text-gray-700 dark:text-gray-300 ">
-                        Vacaciones disponibles
-                    </label>
-                    <div className="flex items-center gap-3">
-                        <input
-                            id="availableDays"
-                            type="number"
-                            min="0"
-                            value={availableDays}
-                            onChange={e => setAvailableDays(Math.max(0, parseInt(e.target.value) || 0))}
-                            className="w-16 px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-white"
-                        />
-                        <span className=" text-gray-700 dark:text-gray-300">dias</span>
-                    </div>
-                </div>
+                <DaysInput availableDays={availableDays} setAvailableDays={setAvailableDays} />
 
                 <div className="dark:text-white">
                     <Calendar
@@ -114,8 +104,8 @@ export default function Home() {
                         onSaveRange={handleSaveRange}
                     />
                 </div>
-                <div>
-                    <RegisterVacations savedRanges={savedRanges} availableDays={availableDays} usedDays={usedDays} onClearVacations={clearSavedRanges} />
+                <div className="w-full max-w-2xl mx-auto">
+                    <RegisterVacations savedRanges={savedRanges} availableDays={availableDays} usedDays={usedDays} onClearVacations={clearSavedRanges} onDeleteRange={handleDeleteRange} />
                 </div>
             </div>
         </>
