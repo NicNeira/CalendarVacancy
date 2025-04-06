@@ -1,6 +1,6 @@
 export const DaysInput = ({ availableDays, setAvailableDays }: { availableDays: number; setAvailableDays: (days: number) => void }) => {
     return (
-        <div className="flex mb-6 items-center gap-3">
+        <div className="flex items-center gap-3">
             <label htmlFor="availableDays" className=" text-gray-700 dark:text-gray-300 ">
                 Vacaciones disponibles
             </label>
