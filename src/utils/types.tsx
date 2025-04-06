@@ -21,3 +21,17 @@ export interface HolidayParams {
     year: number;
     countryCode: string;
 }
+
+export interface VacationRange {
+    from: Date;
+    to: Date;
+    days: number;
+    status?: 'Pending' | 'Approved' | 'Rejected';
+}
+
+export interface RegisterVacationsProps {
+    savedRanges: VacationRange[];
+    availableDays: number;
+    usedDays: number;
+    onClearVacations?: () => void;
+}
