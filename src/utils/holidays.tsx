@@ -1,3 +1,5 @@
+import { Country } from './types';
+
 export const feriadosChile2025 = [
     {
         date: '2025-01-01',
@@ -276,12 +278,6 @@ export const feriadosMexico2025 = [
         type: 'inamovible'
     }
 ];
-
-export interface Country {
-    code: string;
-    name: string;
-    flag: string;
-}
 
 export const CountriesData: Country[] = [
     { code: 'CL', name: 'Chile', flag: '/flags/cl.webp' },

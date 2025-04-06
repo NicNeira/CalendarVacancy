@@ -1,18 +1,6 @@
+import { Holiday, HolidayParams } from '@/utils/types';
 import { useEffect, useState } from 'react';
-import { feriadosArg2025, feriadosChile2025, feriadosMexico2025 } from '../utils/utils';
-
-interface HolidayParams {
-    year: number;
-    countryCode: string;
-}
-
-interface Holiday {
-    date: string;
-    day?: string;
-    name: string;
-    type?: string;
-    countryCode?: string;
-}
+import { feriadosArg2025, feriadosChile2025, feriadosMexico2025 } from '../utils/holidays';
 
 export function useHolidays({ year, countryCode }: HolidayParams) {
     const [holidays, setHolidays] = useState<Holiday[]>([]);
